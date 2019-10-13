@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Step-project-ham</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/normolize.css">
-  <link rel="stylesheet" href="css/style.css">  
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normolize.css">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css"> 
 </head>
 <body>
   <header class="header_bk">
@@ -46,6 +48,7 @@
     </div>
   </header>
   <main>
+    <!-- OPTIONAL -->
     <section class="option">
       <article>
         <img src="images/icons/heand_56.png" alt="" width="60" height="100">
@@ -64,275 +67,580 @@
         <h4>responsive all device</h4>
       </article>
     </section>
+    <!-- SERVICES -->
     <section class="services wrapp">
       <h3>our services</h3>
       <div class="tab-container">
         <ul class="tab-head">
-          <li class="tab-label"><a href="#tab-content1">web dessign</a></li>
-          <li class="tab-label"><a href="#tab-content2">graphic design</a></li>
-          <li class="tab-label"><a href="#tab-content3">online support</a></li>
-          <li class="tab-label"><a href="#tab-content4">app design</a></li>
-          <li class="tab-label"><a href="#tab-content5">online marketing</a></li>
-          <li class="tab-label"><a href="#tab-content6">seo service</a></li>
+          <li class="tab-label active" data-target="first-tab-content">web dessign</li>
+          <li class="tab-label"  data-target="second-tab-content">graphic design</li>
+          <li class="tab-label" data-target="third-tab-content">online support</li>
+          <li class="tab-label" data-target="fourth-tab-content">app design</li>
+          <li class="tab-label" data-target="five-tab-content">online marketing</li>
+          <li class="tab-label" data-target="six-tab-content">seo service</li>
         </ul>
-        <div class="tab-content-container">
-          <div class="tab-item" id="tab-content1">
+        <div class="tab-item active" id="first-tab-content">
+          <a href="#">
             <img src="images/services/img_55.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="tab-item" id="tab-content2">
+          </a>
+        </div>
+        <div class="tab-item" id="second-tab-content">
+          <a href="#">
             <img src="images/gallery/img7.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          </div>
-          <div class="tab-item" id="tab-content3">
+          </a>
+        </div>
+        <div class="tab-item" id="third-tab-content">
+          <a href="#">
             <img src="images/gallery/img1.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="tab-item" id="tab-content4">
+          </a>
+        </div>
+        <div class="tab-item" id="fourth-tab-content">
+          <a href="#">
             <img src="images/gallery/img3_0.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="tab-item" id="tab-content5">
+          </a>
+        </div>
+        <div class="tab-item" id="five-tab-content">
+          <a href="#">
             <img src="images/gallery/img5.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="tab-item" id="tab-content6">
+          </a>
+        </div>
+        <div class="tab-item" id="six-tab-content">
+          <a href="#">
             <img src="images/gallery/img6.png" alt="" width="195" height="140">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>
+    <!-- EVERYHING -->
     <section class="everyhing">
       <h2>everything is ready. just buy and install now</h2>
       <p>Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</p>
       <a href="#" class="button_green">purchase now</a>
     </section>
+    <!-- WORK -->
     <section class="work wrapp">
       <h3>Our Amazing Work</h3>
       <ul class="work_nav">
-        <li><a href="">all</a></li>
-        <li><a href="">graphic design</a></li>
-        <li><a href="">web design</a></li>
-        <li><a href="">landing pages</a></li>
-        <li><a href="">wordpress</a></li>
+        <li class="btn active" data-filter="*">all</li>
+        <li class="btn " data-filter=".grap">graphic design</li>
+        <li class="btn " data-filter=".web">web design</li>
+        <li class="btn " data-filter=".land">landing pages</li>
+        <li class="btn " data-filter=".word">wordpress</li>
       </ul>
       <ul class="work_img-cart">
-        <li>
+        <li class="item grap">
           <article>
             <div class="hover">
               <div class="linck">
                 <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
                 <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-              <h6>creative design</h5>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design1.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_10.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          
+          <img src="images/wordpress/wordpress1.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-
-            <img src="images/work/work_1.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design1.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_2.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress2.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_3.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design2.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_4.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page1.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_5.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design2.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_6.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress3.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_7.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page2.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_8.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress4.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_9.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page3.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_10.png" alt="" width="290" height="205">
-          </li>
-          <li>
-            <article>
-              <div class="hover">
-                <div class="linck">
-                  <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
-                  <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
-                </div>
-                <h6>creative design</h6>
-                <p>web disign</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design3.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-            <img src="images/work/work_11.png" alt="" width="290" height="205">
-          </li>
-        </ul>
-        <a href="#" class="button">
-          <img src="images/icons/crest.png" alt="" width="16" height="16">
-          <p>load more</p>
-        </a>
-      </section>
-      <hr>
-      <!-- NEWS -->
-      <section class="news wrapp">
-        <h3>breaking news</h3>
-        <ul class="news_img-cart">
-          <li>
-            <article>
-             <div class="news-img">
-               <a href="#">
-                 <img src="images/news/new_1.png" alt="">
-                 <span>12 feb</span>
-               </a>
-             </div>
-             <div class="text_title">
-               <a href="">
-                <p>amazing image post</p></a>
-                <div class="span-title">
-                  <span>By admin </span>
-                  <span>2 comment</span>
-                </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design3.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
               </div>
-            </article>
-          </li>
-          <li>
-            <article>
-              <div class="news-img">
-               <a href="#">
-                 <img src="images/news/new_2.png" alt="">
-                 <span>12 feb</span>
-               </a>
-             </div>
-             <div class="text_title">
-              <a href="#">
-               <p>amazing blog post</p>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress5.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design4.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design4.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design5.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page4.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design5.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress6.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design6.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress7.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design7.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design6.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design8.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page5.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design9.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress8.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item web">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/web design/web-design7.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design10.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page6.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress9.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design11.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item word">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/wordpress/wordpress10.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item grap">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/graphic design/graphic-design12.jpg" alt="" width="290" height="205">
+        </li>
+        <li class="item land">
+          <article>
+            <div class="hover">
+              <div class="linck">
+                <a href="#"><i class="fas fa-link" width="16" height="16"></i></a>
+                <a href="#"><i class="fas fa-search" width="16" height="16"></i></a>
+              </div>
+              <h6>creative design</h6>
+              <p>web disign</p>
+            </div>
+          </article>
+          <img src="images/landing page/landing-page7.jpg" alt="" width="290" height="205">
+        </li>
+      </ul>
+      <a href="#" class="button" id="loadMore">
+        <img src="images/icons/crest.png" alt="" width="16" height="16">
+        <p>load more</p>
+      </a>
+    </section>
+    <hr>
+    <!-- NEWS -->
+    <section class="news wrapp">
+      <h3>breaking news</h3>
+      <ul class="news_img-cart">
+        <li>
+          <article>
+           <div class="news-img">
+             <a href="#">
+               <img src="images/news/new_1.png" alt="">
+               <span>12 feb</span>
+               <p>amazing image post</p>
              </a>
-             <div class="span-title">
-               <span>By admin </span>
-               <span>2 comment</span>
-             </div>
            </div>
-         </article>
-       </li>
-       <li>
+           <div class="text_title">
+            <div class="span-title">
+              <span>By admin </span>
+              <span>2 comment</span>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
         <article>
           <div class="news-img">
            <a href="#">
-            <img src="images/news/new_3.png" alt="">
-            <span>12 feb</span>
-          </a>
-        </div>
-        <div class="text_title">
-          <a href="#"><p>amazing blog post</p></a>
+             <img src="images/news/new_2.png" alt="">
+             <span>12 feb</span>
+             <p>amazing image post</p>
+           </a>
+         </div>
+         <div class="text_title">
           <div class="span-title">
             <span>By admin </span>
             <span>2 comment</span>
@@ -344,37 +652,52 @@
       <article>
         <div class="news-img">
          <a href="#">
-          <img src="images/news/new_4.png" alt="">
+          <img src="images/news/new_3.png" alt="">
           <span>12 feb</span>
+          <p>amazing image post</p>
         </a>
       </div>
       <div class="text_title">
-        <a href="#"><p>amazing blog post</p></a>
-        <div class="span-title">
-          <span>By admin </span>
-          <span>2 comment</span>
-        </div>
-      </div>
-    </article>
-  </li>
-  <li>
-    <article>
-      <div class="news-img">
-       <a href="#">
-        <img src="images/news/new_5.png" alt="">
-        <span>12 feb</span>
-      </a>
-    </div>
-    <div class="text_title">
-      <a href="#">
-        <p>amazing blog post</p>
-      </a>
-      <div class="span-title">
-        <span>By admin </span>
-        <span>2 comment</span>
-      </div>
-    </div>
-  </article>
+       <div class="span-title">
+         <span>By admin </span>
+         <span>2 comment</span>
+       </div>
+     </div>
+   </article>
+ </li>
+ <li>
+  <article>
+    <div class="news-img">
+     <a href="#">
+      <img src="images/news/new_4.png" alt="">
+      <span>12 feb</span>
+      <p>amazing image post</p>
+    </a>
+  </div>
+  <div class="text_title">
+   <div class="span-title">
+     <span>By admin </span>
+     <span>2 comment</span>
+   </div>
+ </div>
+</article>
+</li>
+<li>
+  <article>
+    <div class="news-img">
+     <a href="#">
+      <img src="images/news/new_5.png" alt="">
+      <span>12 feb</span>
+      <p>amazing image post</p>
+    </a>
+  </div>
+  <div class="text_title">
+   <div class="span-title">
+     <span>By admin </span>
+     <span>2 comment</span>
+   </div>
+ </div>
+</article>
 </li>
 <li>
   <article>
@@ -382,33 +705,33 @@
      <a href="#">
       <img src="images/news/new_6.png" alt="">
       <span>12 feb</span>
+      <p>amazing image post</p>
     </a>
   </div>
   <div class="text_title">
-    <a href="#"><p>amazing blog post</p></a>
-    <div class="span-title">
-      <span>By admin </span>
-      <span>2 comment</span>
-    </div>
-  </div>
+   <div class="span-title">
+     <span>By admin </span>
+     <span>2 comment</span>
+   </div>
+ </div>
 </article>
 </li>
 <li>
   <article>
     <div class="news-img">
-     <a href="#">
-      <img src="images/news/new_7.png" alt="">
-      <span>12 feb</span>
-    </a>
-  </div>
-  <div class="text_title">
-    <a href="#"><p>amazing blog post</p></a>
-    <div class="span-title">
-      <span>By admin </span>
-      <span>2 comment</span>
+      <a href="#">
+        <img src="images/news/new_7.png" alt="">
+        <span>12 feb</span>
+        <p>amazing image post</p>
+      </a>
     </div>
-  </div>
-</article>
+    <div class="text_title">
+     <div class="span-title">
+       <span>By admin </span>
+       <span>2 comment</span>
+     </div>
+   </div>
+ </article>
 </li>
 <li>
   <article>
@@ -416,47 +739,80 @@
      <a href="#">
       <img src="images/news/new_8.png" alt="">
       <span>12 feb</span>
+      <p>amazing image post</p>
     </a>
   </div>
   <div class="text_title">
-    <a href="#"><p>amazing blog post</p></a>
-    <div class="span-title">
-      <span>By admin </span>
-      <span>2 comment</span>
-    </div>
-  </div>
+   <div class="span-title">
+     <span>By admin </span>
+     <span>2 comment</span>
+   </div>
+ </div>
 </article>
 </li>
 </ul>
 </section>
+<!-- CLIENT -->
 <section class="client">
   <h3>what people say about theHam</h3>
   <img class="com" src="images/icons/com.png" alt="" width="45" height="30">
   <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
-  <div class="name_clients">
-    <a href="">
-      <h5>hasan ali</h5>
-      <p>UX Designer</p>
-      <a href="#" class="border_clients">
-        <img src="images/client/user_1.png" alt="" width="165" height="165">
-      </a>
-    </a>
-  </div>
-  <div class="slider">
-    <a href="" class="slider_nav">
-      <img src="images/icons_nav/erow_left.png" alt="" width="7" height="14">
-    </a>
-
-    <a class="cirkl" href=""><img src="images/client/user_2.png" alt="" width="65" height="65"></a>
-    <a class="cirkl" href=""><img src="images/client/user_3.png" alt="" width="65" height="65"></a>
-    <a class="cirkl" href=""><img src="images/client/user_1.png" alt="" width="65" height="65"></a>
-    <a class="cirkl" href=""><img src="images/client/user_4.png" alt="" width="65" height="65"></a>
-
-    <a href="" class="slider_nav">
-      <img src="images/icons_nav/erow_right.png" alt="" width="7" height="14">
-    </a>
+  <div class="slick-slid">
+    <ul class=" slider-single name_clients">
+      <li>
+        <h5>keri part</h5>
+        <p>UI Designer</p>
+        <a href="#" class="border_clients">
+          <img src="images/client/user_5.png" alt="" width="165" height="165">
+        </a>
+      </li>
+      <li>
+        <h5>luck bols</h5>
+        <p>Front-End Developer</p>
+        <a href="#" class="border_clients">
+          <img src="images/client/user_3.png" alt="" width="165" height="165">
+        </a>
+      </li>
+      <li>
+        <h5>hasan ali</h5>
+        <p>UX Designer</p>
+        <a href="#" class="border_clients">
+          <img src="images/client/user_1.png" alt="" width="165" height="165">
+        </a>
+      </li>
+      <li>
+        <h5>lisa tim</h5>
+        <p>Web Designer</p>
+        <a href="#" class="border_clients">
+          <img src="images/client/user_4.png" alt="" width="165" height="165">
+        </a>
+      </li>
+    </ul>
+    <ul class="slider slider-nav">
+      <li>
+        <a class="cirkl" href="#">
+          <img src="images/client/user_5.png" alt="" width="65" height="65">
+        </a>
+      </li>
+      <li>
+        <a class="cirkl" href="#">
+          <img src="images/client/user_3.png" alt="" width="65" height="65">
+        </a>
+      </li>
+      <li>
+        <a class="cirkl" href="#">
+          <img src="images/client/user_1.png" alt="" width="65" height="65">
+        </a>
+      </li>
+      <li>
+        <a class="cirkl" href="#">
+          <img src="images/client/user_4.png" alt="" width="65" height="65">
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
+<!-- GALLERY -->
 <section class="gallery wrapp">
   <h3>gallery of best images</h3>
   <div class="gallery_box">
@@ -498,11 +854,14 @@
     <p>load more</p>
   </a>
 </section>
-
 </main>
 <footer class="footer">
   <p class="footer_text">© Copyright 2015 <span>theHam</span> | All Rights Reserved</p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/288c12c1bc.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
